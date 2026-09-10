@@ -3,9 +3,14 @@ void setup() {
   noLoop(); //stops the draw() function from repeating
 }
 void draw() {
-  //your code here
+  boolean shift =true;
+  for(int y =500; y>=0; y= y-10)
+    {
+      for(int x = 500; x>=0; x= x-26)
+      
+      scale(x,y);
 }
 void scale(int x, int y) {
-  //your code here
+  fill(24,141,170);
+  bezier(0 + x,0 + y,-10 + x,30 +y,80 + x,80 + y,26 + x,0 + y);
 }
-
